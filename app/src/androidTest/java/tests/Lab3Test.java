@@ -23,6 +23,9 @@ public class Lab3Test extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_first() {
         mainActivity = getActivity();
 
+        assertEquals(mainActivity.add(40, 50), 90);
+        assertEquals(mainActivity.add(121, 142), 263);
+
         //Button button = (Button) mainActivity.findViewById(R.id.button);
         //button.callOnClick();
 
@@ -32,10 +35,6 @@ public class Lab3Test extends ActivityInstrumentationTestCase2<MainActivity> {
         //int num2 = Integer.parseInt(editText2.getText().toString());
         //TextView textView = (TextView) mainActivity.findViewById(R.id.textView);
         //int tester = Integer.parseInt(textView.getText().toString());
-        int num1 = 20;
-        int num2 = 20;
-        int sum = mainActivity.add(num1, num2);
 
-        assertEquals(40, sum);
     }
 }
