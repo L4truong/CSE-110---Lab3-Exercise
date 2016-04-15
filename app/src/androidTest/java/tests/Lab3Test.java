@@ -26,15 +26,5 @@ public class Lab3Test extends ActivityInstrumentationTestCase2<MainActivity> {
         assertEquals(mainActivity.add(40, 50), 90);
         assertEquals(mainActivity.add(121, 142), 263);
 
-        //Button button = (Button) mainActivity.findViewById(R.id.button);
-        //button.callOnClick();
-
-        //EditText editText1 = (EditText) mainActivity.findViewById(R.id.text);
-        //EditText editText2 = (EditText) mainActivity.findViewById(R.id.text2);
-        //int num1 = Integer.parseInt(editText1.getText().toString());
-        //int num2 = Integer.parseInt(editText2.getText().toString());
-        //TextView textView = (TextView) mainActivity.findViewById(R.id.textView);
-        //int tester = Integer.parseInt(textView.getText().toString());
-
     }
 }
