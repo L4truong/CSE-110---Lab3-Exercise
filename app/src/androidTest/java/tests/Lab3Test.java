@@ -23,8 +23,8 @@ public class Lab3Test extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_first() {
         mainActivity = getActivity();
 
-        assertEquals(mainActivity.add(40, 50), 90);
-        assertEquals(mainActivity.add(121, 142), 263);
+        assertEquals(mainActivity.subtract(50, 40), 10);
+        assertEquals(mainActivity.subtract(121, 41), 80);
 
     }
 }

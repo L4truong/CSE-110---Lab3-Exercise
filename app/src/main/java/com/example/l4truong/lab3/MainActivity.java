@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText editText2 = (EditText) findViewById(R.id.text2);
                 int num1 = Integer.parseInt(editText1.getText().toString());
                 int num2 = Integer.parseInt(editText2.getText().toString());
-                int sum = add(num1, num2);
+                int sum = subtract(num1, num2);
 
                 TextView textView = (TextView) findViewById(R.id.textView);
                 textView.setTextSize(40);
@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public int add(int num1, int num2) {
-        return num1 + num2;
+    public int subtract(int num1, int num2) {
+        return num1 - num2;
     }
 
 }
